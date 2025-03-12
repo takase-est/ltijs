@@ -1,0 +1,29 @@
+{
+  "plugins": [
+    ["@babel/plugin-proposal-class-properties"],
+    ["@babel/plugin-syntax-import-meta"]
+  ],
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "node": "12"
+      },
+      "modules": false,
+      "useBuiltIns": false,
+      "bugfixes": true
+    }]
+  ],
+  "assumptions": {
+    "setPublicClassFields": true,
+    "privateFieldsAsProperties": true,
+    "noDocumentAll": true
+  },
+  "sourceMaps": true,
+  "ignore": [
+    "**/*.d.ts",
+    "**/*.test.js",
+    "**/*.test.mjs",
+    "**/*.spec.js",
+    "**/*.spec.mjs"
+  ]
+} 

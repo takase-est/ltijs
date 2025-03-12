@@ -1,0 +1,5 @@
+{
+  "require": "@babel/register",
+  "extension": ["js", "mjs"],
+  "node-option": ["experimental-modules", "experimental-specifier-resolution=node"]
+} 
